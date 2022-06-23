@@ -1,4 +1,5 @@
 # Game supermarket war based on clustering Real-time Kmeans  
+[![](https://img.shields.io/badge/-Netpie-blue)](#) [![](https://img.shields.io/badge/-kmean-green)](#)  
 Project Supermarket war game (Promotion and marketing Analytic game)  
 **Objective :**  
 The objective of this game is Create games to help segment players who play the game accordingly.
