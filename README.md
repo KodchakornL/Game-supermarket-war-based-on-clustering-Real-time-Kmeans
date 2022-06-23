@@ -1,4 +1,4 @@
-# Project-Supermarket-war-game  
+# Game supermarket war based on clustering Real-time Kmeans  
 Project Supermarket war game (Promotion and marketing Analytic game)  
 **Objective :**  
 The objective of this game is Create games to help segment players who play the game accordingly.
