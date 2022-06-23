@@ -15,16 +15,16 @@ Can be used in retail businesses that want to sell products that meet the needs 
 Real-time data from the person at that moment.  
 Feature
         ```
-        # A0) Position in X axis => position X [1, 2, 3, 2, 1] / 5  
-        # A1) Position in Y axis => position Y [200, 150, 130, 170] / 4  
-        # A2) Number of Upselling count  
-        # A3) Number of Cross selling count  
-        # A4) Number of Discount count  
-        # A5) Number of Member count  
-        # A6) Number of Upselling count / Number of Upselling created  
-        # A7) Number of Cross selling count / Number of Cross selling created  
-        # A8) Number of Discount count / Number of Discount created  
-        # A9) Number of Member count / Number of Member created  
+        A0) Position in X axis => position X [1, 2, 3, 2, 1] / 5  
+        A1) Position in Y axis => position Y [200, 150, 130, 170] / 4  
+        A2) Number of Upselling count  
+        A3) Number of Cross selling count  
+        A4) Number of Discount count  
+        A5) Number of Member count  
+        A6) Number of Upselling count / Number of Upselling created  
+        A7) Number of Cross selling count / Number of Cross selling created  
+        A8) Number of Discount count / Number of Discount created  
+        A9) Number of Member count / Number of Member created  
         ```
 
   
