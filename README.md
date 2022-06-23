@@ -28,7 +28,7 @@ Feature
         A9) Number of Member count / Number of Member created  
         
 Promotion and enemy character in game :  
-<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.1.png" width="450" height="250" />   
+<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.1.png" width="450" height="300" />   
   
 **Technique :**  
 - Clustering Real-time by Cluster.Kmeans  
