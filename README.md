@@ -43,15 +43,16 @@ Find difference first and seconds : 1.52, 0.94, 0, 0, 1 ,0, 0, 0, 0, 0.03
 
 **Data achitecture**  
 From the picture on the left, players will come to play games to get their favorite promotions. Player data is sent to netpie for analytic using scikit multiflow for real-time clustering using kmean. After analytic is done it is sent to netpie and sent to shop.  
-
-
+<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.2.png" width="450" height="300" />  
+  
+  
 **Predict**  
 Use K-mean for 4 group Clustering   
 labels[0]: 'Promotion Upselling',  
 labels[1]: 'Promotion Cross selling',  
 labels[2]: 'Promotion Discounts',  
 labels[3]: 'Promotion For member',  
-
+  
           def prediction_user_type(level, keyX_pressed_count, keyY_pressed_count, respawn_enemy_count, respawn_coin_count):
               global A0, A1
               a0 = statistics.mean(A0) if len(A0) else 0
@@ -74,12 +75,12 @@ labels[3]: 'Promotion For member',
               return LABELS.get(y)
   
   
-Find Most User Type
-Rank by mean
-A2) Number of Upselling count
-A3) Number of Cross selling count
-A4) Number of Discount count
-A5) Number of Member count
+Find Most User Type  
+Rank by mean  
+A2) Number of Upselling count  
+A3) Number of Cross selling count  
+A4) Number of Discount count  
+A5) Number of Member count  
 
         def Fine_most_user_type(collect_somthing,PLAYER_NAME):
             import pandas as pd
@@ -101,3 +102,12 @@ A5) Number of Member count
             sorted_index_crossell = np.argsort(mean_crossell).tolist()[::-1]
             sorted_index_discount = np.argsort(mean_discount).tolist()[::-1]
             sorted_index_member = np.argsort(mean_member).tolist()[::-1]
+            
+## How to play the game  
+<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.3.png" width="450" height="300" /> <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.4.png" width="450" height="300" />  
+<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.5.png" width="450" height="300" /> <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.6.png" width="450" height="300" /> 
+<img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.7.png" width="450" height="300" /> <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.8.png" width="450" height="300" /> 
+
+
+
+
