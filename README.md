@@ -13,7 +13,7 @@ Can be used in retail businesses that want to sell products that meet the needs 
   
 **Dataset :**  
 Real-time data from the person at that moment.  
-Feature
+Feature  
         ```
         A0) Position in X axis => position X [1, 2, 3, 2, 1] / 5  
         A1) Position in Y axis => position Y [200, 150, 130, 170] / 4  
