@@ -27,7 +27,14 @@ Feature
         A8) Number of Discount count / Number of Discount created  
         A9) Number of Member count / Number of Member created  
         
-        
+ Promotion and enemy character in game :
+ 
+  
 **Technique :**  
 - Clustering Real-time by Cluster.Kmeans  
+
+
+**Data achitecture**  
+From the picture on the left, players will come to play games to get their favorite promotions. Player data is sent to netpie for analytic using scikit multiflow for real-time clustering using kmean. After analytic is done it is sent to netpie and sent to shop.  
+
 
