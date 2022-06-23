@@ -11,6 +11,9 @@ Can be used in retail businesses that want to sell products that meet the needs 
 - Help in making Product Recommendation can be more direct to the group, Cross sell, Upsales, Send promotion directly to the group, saving costs in sending Promotion to people who don't use it.  
 - to divide the target audience before placing the the position of the brand of the product or service itself (Positioning) and and sell to that target group (Targeting)  
   
+**Technique :**  
+- Clustering Real-time by Cluster.Kmeans  
+  
 **Dataset :**  
 Real-time data from the person at that moment.  
 Feature  
@@ -37,10 +40,7 @@ First second : 570.60, 400.85, 7, 7, 7, 8, 0.63, 0.63, 0.63
 Seconds later: 572.12, 401.79, 7, 7, 8, 8, 0.63, 0.63, 0.66  
 Find difference first and seconds : 1.52, 0.94, 0, 0, 1 ,0, 0, 0, 0, 0.03
   
-**Technique :**  
-- Clustering Real-time by Cluster.Kmeans  
-
-
+  
 ## **Data achitecture**  
 From the picture on the left, players will come to play games to get their favorite promotions. Player data is sent to netpie for analytic using scikit multiflow for real-time clustering using kmean. After analytic is done it is sent to netpie and sent to shop.  
 <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.2.png" width="450" height="300" />  
