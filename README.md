@@ -52,6 +52,28 @@ labels[1]: 'Promotion Cross selling',
 labels[2]: 'Promotion Discounts',  
 labels[3]: 'Promotion For member',  
 
+          def prediction_user_type(level, keyX_pressed_count, keyY_pressed_count, respawn_enemy_count, respawn_coin_count):
+              global A0, A1
+              a0 = statistics.mean(A0) if len(A0) else 0
+              a1 = statistics.mean(A1) if len(A1) else 0
+              a2 = destroyed_Upselling_count
+              a3 = destroyed_Crossselling_count
+              a4 = destroyed_Discount_count
+              a5 = destroyed_Member_count
+              a6 = respawn_UpsellPro_count
+              a7 =  respawn_Crosssell_count
+              a8 = respawn_Discount_count
+              a9 = respawn_Member_count
+              a10 = respawn_coin_count
+              # a11 = a3/a9
+              # a12 = a2/a10
+              X = [[a0, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10]]
+
+              X_scale = dt_scaler.transform(X)
+              y = decision_tree.predict(X_scale)[0]
+              return LABELS.get(y)
+  
+  
 Find Most User Type
 Rank by mean
 A2) Number of Upselling count
