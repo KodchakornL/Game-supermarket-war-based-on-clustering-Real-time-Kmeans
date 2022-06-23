@@ -41,12 +41,12 @@ Find difference first and seconds : 1.52, 0.94, 0, 0, 1 ,0, 0, 0, 0, 0.03
 - Clustering Real-time by Cluster.Kmeans  
 
 
-**Data achitecture**  
+## **Data achitecture**  
 From the picture on the left, players will come to play games to get their favorite promotions. Player data is sent to netpie for analytic using scikit multiflow for real-time clustering using kmean. After analytic is done it is sent to netpie and sent to shop.  
 <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.2.png" width="450" height="300" />  
   
   
-**Predict**  
+## **Predict**  
 Use K-mean for 4 group Clustering   
 labels[0]: 'Promotion Upselling',  
 labels[1]: 'Promotion Cross selling',  
