@@ -30,6 +30,13 @@ Feature
 Promotion and enemy character in game :  
 <img src="https://github.com/KodchakornL/Project-Supermarket-war-game/blob/main/slide_ppt/picture_No.1.png" width="450" height="300" />   
   
+Collect data every 1 second  
+example :  
+10 variable data  
+First second : 570.60, 400.85, 7, 7, 7, 8, 0.63, 0.63, 0.63  
+Seconds later: 572.12, 401.79, 7, 7, 8, 8, 0.63, 0.63, 0.66  
+Find difference first and seconds : 1.52, 0.94, 0, 0, 1 ,0, 0, 0, 0, 0.03
+  
 **Technique :**  
 - Clustering Real-time by Cluster.Kmeans  
 
@@ -38,3 +45,37 @@ Promotion and enemy character in game :
 From the picture on the left, players will come to play games to get their favorite promotions. Player data is sent to netpie for analytic using scikit multiflow for real-time clustering using kmean. After analytic is done it is sent to netpie and sent to shop.  
 
 
+**Predict**  
+Use K-mean for 4 group Clustering   
+labels[0]: 'Promotion Upselling',  
+labels[1]: 'Promotion Cross selling',  
+labels[2]: 'Promotion Discounts',  
+labels[3]: 'Promotion For member',  
+
+Find Most User Type
+Rank by mean
+A2) Number of Upselling count
+A3) Number of Cross selling count
+A4) Number of Discount count
+A5) Number of Member count
+
+        def Fine_most_user_type(collect_somthing,PLAYER_NAME):
+            import pandas as pd
+            import numpy as np
+
+            Total_df = pd.DataFrame (collect_somthing, columns = ['Name','A0','A1','A2','A3','A4','A5','A6','A7','A8','A9','y'])
+
+            predict_user_type = Total_df.loc[Total_df['Name'] == PLAYER_NAME ].groupby('y').count()
+            # print(predict_user_type)
+            index_group = predict_user_type.index.values.tolist()
+
+
+            mean_upsell = list(Total_df.groupby(['y']).mean()['A2'])
+            mean_crossell = list(Total_df.groupby(['y']).mean()['A3'])
+            mean_discount = list(Total_df.groupby(['y']).mean()['A4'])
+            mean_member = list(Total_df.groupby(['y']).mean()['A5'])
+
+            sorted_index_upsell = np.argsort(mean_upsell).tolist()[::-1]
+            sorted_index_crossell = np.argsort(mean_crossell).tolist()[::-1]
+            sorted_index_discount = np.argsort(mean_discount).tolist()[::-1]
+            sorted_index_member = np.argsort(mean_member).tolist()[::-1]
